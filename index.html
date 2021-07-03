@@ -8,14 +8,17 @@
     <title>Jarred Fourie</title>
 </head>
 <body>
-    <audio id="music" controls loop autoplay class="html-music">
+    <iframe src="./assets/silence.mp3" allow="autoplay" style="display:none" id="iframeAudio">
+    </iframe> 
+
+    <audio id="music" controls autoplay class="html-music" id="playAudio">
         <source src="./assets/nobodyhere.mp3" type="audio/mp3">
     </audio>
 
     <div class="music-player">
         <div class="header">procuro.exe</div>
         <div class="content">
-            <img src="./assets/album.gif" alt="" class="album">
+            <img src="./assets/album.png" alt="" class="album">
             <div class="song-name"><a href="https://www.youtube.com/watch?v=-RFunvF0mDw">Now Playing: Nobody Here</a></div>
             <div class="player">
                 <button onclick="volumeControl()" type="button">
@@ -101,16 +104,13 @@
         var muted = false;
 
         window.onload = function() {
-            gfg.volume = 0.07;
+            gfg.play();
+            gfg.volume = 0.05;
         };
-
-        function volume() { 
-            alert(gfg.volume);
-        } 
           
         function volumeControl() {
             if(muted){
-                gfg.volume = 0.05;
+                gfg.volume = 0.03;
                 muted = !muted;
             }else{
                 gfg.volume = 0;
