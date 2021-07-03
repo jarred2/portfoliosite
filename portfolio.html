@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/generic.css">
+    <link rel="stylesheet" href="./css/portfolio.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="projects-card desktop">
+        <div class="header">message</div>
+        <div class="content">
+            <div class="message">click a project!!!!</div>
+            <div class="buttons">
+                <div class="small-button" title="View Procuro Books">Procuro</div>
+                <div class="small-button" title="View Procuro Books">Procuro</div>
+            </div>
+        </div>
+    </div>
+    <video class="background-video"src="./assets/background.mp4" id="background"muted loop autoplay></video>
+    <div class="page-content">
+        <div class="project-intro-card window-card">
+            <div class="header">procuro.exe</div>
+            <div class="card-content">
+                <img src="./assets/procuro.png" alt="Procuro books" class="screenshot">
+                <div class="description">Procuro Books</div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        function scrollHorizontally(e) {
+            e = window.event || e;
+            var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
+            var scrollSpeed = 60; // Janky jank <<<<<<<<<<<<<<
+            document.documentElement.scrollLeft -= (delta * scrollSpeed);
+            document.body.scrollLeft -= (delta * scrollSpeed);
+            e.preventDefault();
+        }
+
+        if (window.addEventListener) {
+        // IE9, Chrome, Safari, Opera
+        window.addEventListener("mousewheel", scrollHorizontally, false);
+        // Firefox
+        window.addEventListener("DOMMouseScroll", scrollHorizontally, false);
+        } else {
+        // IE 6/7/8
+        window.attachEvent("onmousewheel", scrollHorizontally);
+        }
+    </script>
+</body>
+</html>

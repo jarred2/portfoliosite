@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/generic.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Jarred Fourie</title>
 </head>
 <body>
-    <iframe src="./assets/silence.mp3" allow="autoplay" style="display:none" id="iframeAudio">
-    </iframe> 
 
     <audio id="music" controls autoplay class="html-music" id="playAudio">
         <source src="./assets/nobodyhere.mp3" type="audio/mp3">
@@ -29,26 +28,27 @@
         </div>
     </div>
     <img src="./assets/cube.png" alt="" class="cube">
-    <video class="backgorund-video"src="./assets/background.mp4" id="background"muted loop autoplay></video>
+    <video class="background-video"src="./assets/background.mp4" id="background"muted loop autoplay></video>
     <div class="start-menu">
-        <div class="menu-item start"><img src="./assets/start.png" alt="" class="icon">Hire Me</div>
+        <a href="#"><div class="menu-item start"><img src="./assets/start.png" alt="" class="icon">Hire Me</div></a>
         <div class="seperator"></div>
-        <div class="start-bar-window"><img src="./assets/world.png" alt="" class="icon"> Website Home Page</div>
-        <div class="menu-item"><img src="./assets/portfolio.png" alt="" class="icon"> Portfolio</div>
-        <div class="menu-item"><img src="./assets/resume.png" alt="" class="icon">Resume</div>
+        <a href="index.html"><div class="start-bar-window"><img src="./assets/world.png" alt="" class="icon">Website Home Page</div></a>
+        <a href="#"><div class="menu-item"><img src="./assets/portfolio.png" alt="" class="icon"> Portfolio</div></a>
+        <a href="./assets/jarredfourie_resume.pdf"><div class="menu-item"><img src="./assets/resume.png" alt="" class="icon">Resume</div></a>
+        <div class="menu-item menu-end"><img src="./assets/calendar.png" alt="" class="icon">4:20 PM</div>
     </div>
     <div class="page-content">
-        <div class="profile-card">
+        <div class="profile-card window-card">
             <div class="header">profile.card.exe</div>
             <div class="content">
                 <div class="profile-details">
                     <div class="mobile">
                         ⚠ view site on desktop for the full experince ⚠
                     </div>
-                    <div class="profile-name">Jarred Fourie🐵</div>
-                    <div class="profile-job">UX Engineer @ <a href="https://entelect.co.za/" title="Entelect Homepage">Entelect</a></div>
+                    <div class="profile-name">Jarred Fourie</div>
+                    <div class="profile-job">UX Engineer @ <a href="https://entelect.co.za/" id="job" title="Entelect Homepage">Entelect</a></div>
                     <div class="profile-desc">HTML/CSS <strong>lunatic</strong> working to connect functionality with artistic expression. <br/> <br> Doing all my design work in Adobe Xd</div>
-                    <button class="windows-button">Resume</button>
+                    <a href="./assets/jarredfourie_resume.pdf" class="resume"><button class="windows-button">Resume</button></a> 
                 </div>
                 <div class="social-media">
                         <svg class="social" width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -69,25 +69,30 @@
         </div>
         <div class="work desktop">
             <div class="tabs">
-                <a class="tab active" href="#">Work</a>
-                <a class="tab" href="#">Hobbies</a>
+                <a class="tab active" href="#">最高の F e a t u r e d __ P r o j e c t s</a>
             </div>
-            <div class="port-card">
-                <div class="header">procuro.exe</div>
-                <div class="content" title="View Procuro Books">
-                    <div class="details">
-                        <div class="windows-button view-button" title="View Procuro Books">View</div>
+            <div class="wrapper">
+                <div class="port-card">
+                    <div class="header">procuro.exe</div>
+                    <div class="content" title="View Procuro Books">
+                        <img src="./assets/procuro.png" alt="Procuro books" class="screenshot">
+                        <div class="buttons">
+                            <a href="#"><div class="project-button small-button">open...</div></a>
+                            <a href="#"><div class="project-button small-button">OPEN!!!</div></a>
+                        </div>
                     </div>
-                    <img src="./assets/procuro.png" alt="Procuro books" class="screenshot">
                 </div>
             </div>
-            <div class="port-card">
-                <div class="header">procuro.exe</div>
-                <div class="content" title="View Procuro Books">
-                    <div class="details">
-                        <div class="windows-button view-button" title="View Procuro Books">View</div>
+            <div class="wrapper2">
+                <div class="port-card">
+                    <div class="header">procuro.exe</div>
+                    <div class="content" title="View Procuro Books">
+                        <img src="./assets/procuro.png" alt="Procuro books" class="screenshot">
+                        <div class="buttons">
+                            <a href="#"><div class="project-button small-button">open...</div></a>
+                            <a href="#"><div class="project-button small-button">OPEN!!!</div></a>
+                        </div>
                     </div>
-                    <img src="./assets/procuro.png" alt="Procuro books" class="screenshot">
                 </div>
             </div>
         </div>
@@ -95,7 +100,10 @@
             <div class="header">message</div>
             <div class="content">
                 <div class="message">Want to see more?</div>
-                <div class="windows-button view-button" title="View Procuro Books">YES!!!!!!!</div>
+                <div class="buttons">
+                    <div class="small-button" title="View Procuro Books">Yes</div>
+                    <div class="small-button" title="View Procuro Books">YES!!!</div>
+                </div>
             </div>
         </div>
     </div>
@@ -109,9 +117,7 @@
 
         window.onload = function() {
             gfg.volume = 0.05;
-            gfg.play();
-            paused = false;
-            musicPause.innerHTML = "pause";
+            musicPause.innerHTML = "play";
             musicVolume.innerHTML = "<img src=\"./assets/speaker.png\" alt=\"\" class=\"icon\">";
         };
         function pauseControl(){
