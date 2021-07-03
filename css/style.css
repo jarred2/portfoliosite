@@ -12,7 +12,7 @@ body {
 }
 
 .content {
-  padding: 3rem 1.5rem 2rem;
+  padding: 1rem 1.5rem 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -24,6 +24,12 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 100%;
+}
+
+@media only screen and (min-width: 900px) {
+  .content {
+    padding: 3rem 1.5rem 2rem;
+  }
 }
 
 .html-music {
@@ -75,11 +81,6 @@ body {
           flex-direction: column;
 }
 
-.music-player .album {
-  padding: 5px;
-  width: 200px;
-}
-
 .music-player .song-name {
   margin: 5px 0;
   text-align: center;
@@ -93,16 +94,12 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
 .music-player .player .icon {
@@ -112,6 +109,21 @@ body {
 
 .music-player .content {
   padding: 0rem;
+}
+
+.music-player .album {
+  width: 0;
+  visibility: hidden;
+  opacity: 0;
+}
+
+@media only screen and (min-width: 900px) {
+  .music-player .album {
+    padding: 5px;
+    width: 200px;
+    visibility: visible;
+    opacity: 1;
+  }
 }
 
 .backgorund-video {
@@ -153,16 +165,25 @@ button {
   position: absolute;
   z-index: 1000;
   bottom: 60px;
-  width: 200px;
-  left: 200px;
+  width: 125px;
+  right: 25px;
   -webkit-animation: cubeGrow ease-out .7s backwards;
           animation: cubeGrow ease-out .7s backwards;
   -webkit-animation-delay: 1.5s;
           animation-delay: 1.5s;
 }
 
+@media only screen and (min-width: 900px) {
+  .cube {
+    right: unset;
+    width: 200px;
+    left: 200px;
+  }
+}
+
 @media only screen and (min-width: 1600px) {
   .cube {
+    right: unset;
     width: 225px;
     left: 225px;
   }
@@ -399,7 +420,7 @@ strong {
   display: none;
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 900px) {
   .page-content {
     height: 100vh;
     display: -ms-grid;

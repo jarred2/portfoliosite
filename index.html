@@ -21,8 +21,9 @@
             <img src="./assets/album.png" alt="" class="album">
             <div class="song-name"><a href="https://www.youtube.com/watch?v=-RFunvF0mDw">Now Playing: Nobody Here</a></div>
             <div class="player">
-                <button onclick="volumeControl()" type="button">
-                    <img src="./assets/speaker.png" alt="" class="icon">
+                <button onclick="pauseControl()" type="button"><div class="button-text" id="music-pause"></div></button>
+                <button onclick="volumeControl()" type="button" id="music-volume">
+                    <!-- <img src="./assets/speaker.png" alt="" class="icon"> -->
                 </button>
             </div>
         </div>
@@ -102,19 +103,38 @@
     <script>
         var gfg = document.getElementById("music");
         var muted = false;
+        var paused = true;
+        var musicPause = document.getElementById("music-pause");
+        var musicVolume = document.getElementById("music-volume");
 
         window.onload = function() {
-            gfg.play();
             gfg.volume = 0.05;
+            gfg.play();
+            paused = false;
+            musicPause.innerHTML = "pause";
+            musicVolume.innerHTML = "<img src=\"./assets/speaker.png\" alt=\"\" class=\"icon\">";
         };
-          
+        function pauseControl(){
+            if(paused){
+                gfg.play();
+                paused = !paused;
+                musicPause.innerHTML = "pause";
+            }else{
+                gfg.pause();
+                paused = !paused;
+                musicPause.innerHTML = "play";
+            }
+        }
+
         function volumeControl() {
             if(muted){
                 gfg.volume = 0.03;
                 muted = !muted;
+                musicVolume.innerHTML = "<img src=\"./assets/speaker.png\" alt=\"\" class=\"icon\">";
             }else{
                 gfg.volume = 0;
                 muted = !muted;
+                musicVolume.innerHTML = "<img src=\"./assets/speaker_mute.png\" alt=\"\" class=\"icon\">";
             }
         } 
     </script> 

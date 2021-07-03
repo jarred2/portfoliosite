@@ -11,7 +11,10 @@ body{
 }
 
 .content{
-    padding: 3rem 1.5rem 2rem;
+    padding: 1rem 1.5rem 2rem;
+    @media only screen and (min-width: 900px) {
+        padding: 3rem 1.5rem 2rem;
+    }
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -35,10 +38,7 @@ body{
     top: 10px;
     right: 20px;
     width: 205px;
-    .album{
-        padding: 5px;
-        width: 200px;
-    }
+
     .song-name{
         margin: 5px 0;
         text-align: center;
@@ -52,9 +52,8 @@ body{
             height: 30px !important;
         }
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
-        flex-direction: column;
     }
     border-radius: 5px;
     border: solid 3px #CDCDCF;
@@ -67,6 +66,19 @@ body{
         padding: 0rem;
     }
     flex-direction: column;
+    .album{
+        width: 0;
+        visibility: hidden;
+        opacity: 0;
+    }
+    @media only screen and (min-width: 900px) {
+        .album{
+            padding: 5px;
+            width: 200px;
+            visibility: visible;
+            opacity: 1;
+        }
+    }
 }
 .backgorund-video{
     position: absolute;
@@ -96,11 +108,17 @@ button{
     position: absolute;
     z-index: 1000;
     bottom: 60px;
-    width: 200px;
-    left: 200px;
+    width: 125px;
+    right: 25px;
     animation: cubeGrow ease-out .7s backwards;
     animation-delay: 1.5s;
+    @media only screen and (min-width: 900px) {
+        right: unset;
+        width: 200px;
+        left: 200px;
+    }
     @media only screen and (min-width: 1600px) {
+        right: unset;
         width: 225px;
         left: 225px;
     }
@@ -244,7 +262,9 @@ strong{
         background-position: 30% 30%;
     }
 }
+
 .page-content{
+    
     animation: backgroundFall linear .7s forwards;
     background-size: cover;
     background-repeat: no-repeat;
@@ -258,7 +278,7 @@ strong{
     .desktop{
         display: none;
     }
-    @media only screen and (min-width: 700px) {
+    @media only screen and (min-width: 900px) {
         height: 100vh;
         display: grid;
         grid-template-columns: 30% 70%;
