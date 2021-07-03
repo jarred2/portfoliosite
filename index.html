@@ -4,380 +4,119 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Jarred Fourie — UX Engineer</title>
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Jarred Fourie</title>
 </head>
 <body>
+    <audio id="music" controls loop autoplay class="html-music">
+        <source src="./assets/nobodyhere.mp3" type="audio/mp3">
+    </audio>
 
-    <header class="mobile-bar">
-        <div class="mobile-flex mobile-active">
-            <svg id="portfolio" data-name="mail (1)" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 71.241 71.244" class="resume-svg">
-                <g id="Group_16" data-name="Group 16" transform="translate(0 0)">
-                  <g id="Group_15" data-name="Group 15">
-                    <path id="Path_7" data-name="Path 7" d="M67.945,29.142l1.476-1.476a6.262,6.262,0,0,0-8.855-8.855l-2.952,2.952h0l-3.056,3.056V18.785s0,0,0-.006a2.107,2.107,0,0,0-.611-1.47L37.248.612A2.108,2.108,0,0,0,35.772,0H6.273A6.269,6.269,0,0,0,.011,6.262V64.982a6.269,6.269,0,0,0,6.262,6.262H48.3a6.269,6.269,0,0,0,6.262-6.262V42.529L64.993,32.093l1.476,1.476a2.089,2.089,0,0,1,0,2.952l-8.855,8.855a2.087,2.087,0,0,0,2.952,2.952l8.855-8.855a6.269,6.269,0,0,0,0-8.855ZM37.859,7.126,47.431,16.7H39.947a2.09,2.09,0,0,1-2.087-2.087V7.126ZM50.383,64.982h0A2.09,2.09,0,0,1,48.3,67.07H6.273a2.09,2.09,0,0,1-2.087-2.087V6.262A2.09,2.09,0,0,1,6.273,4.174H33.685V14.611a6.269,6.269,0,0,0,6.262,6.262H50.383v8.121L31.048,48.328c-.473.473-.379.514-5.459,11.545a2.087,2.087,0,0,0,2.769,2.769c11.53-5.31,11.028-5.04,11.342-5.283l.035-.026a2.123,2.123,0,0,0,.168-.15L50.383,46.7V64.982Zm-15.55-9.918-3.089,1.422L33.166,53.4Zm3.594-2.309L35.476,49.8,59.09,26.19l2.952,2.952ZM66.469,24.714,64.993,26.19l-2.952-2.952,1.476-1.476a2.087,2.087,0,0,1,2.952,2.952Z" transform="translate(-0.011 0)"/>
-                  </g>
-                </g>
-                <g id="Group_18" data-name="Group 18" transform="translate(8.349 58.721)">
-                  <g id="Group_17" data-name="Group 17">
-                    <path id="Path_8" data-name="Path 8" d="M70.15,422H62.1a2.087,2.087,0,0,0,0,4.174H70.15a2.087,2.087,0,0,0,0-4.174Z" transform="translate(-60.011 -422)"/>
-                  </g>
-                </g>
-                <g id="Group_20" data-name="Group 20" transform="translate(8.349 46.197)">
-                  <g id="Group_19" data-name="Group 19">
-                    <path id="Path_9" data-name="Path 9" d="M74.6,332H62.1a2.087,2.087,0,0,0,0,4.174H74.6a2.087,2.087,0,0,0,0-4.174Z" transform="translate(-60.011 -332)"/>
-                  </g>
-                </g>
-                <g id="Group_22" data-name="Group 22" transform="translate(8.349 33.674)">
-                  <g id="Group_21" data-name="Group 21">
-                    <path id="Path_10" data-name="Path 10" d="M87.127,242H62.1a2.087,2.087,0,0,0,0,4.174H87.127a2.087,2.087,0,0,0,0-4.174Z" transform="translate(-60.011 -242)"/>
-                  </g>
-                </g>
-                <g id="Group_24" data-name="Group 24" transform="translate(8.349 20.872)">
-                  <g id="Group_23" data-name="Group 23">
-                    <path id="Path_11" data-name="Path 11" d="M82.952,150H62.1a2.087,2.087,0,0,0,0,4.174H82.952a2.087,2.087,0,0,0,0-4.174Z" transform="translate(-60.011 -150)"/>
-                  </g>
-                </g>
-                <g id="Group_26" data-name="Group 26" transform="translate(8.349 8.349)">
-                  <g id="Group_25" data-name="Group 25">
-                    <path id="Path_12" data-name="Path 12" d="M70.15,60H62.1a2.087,2.087,0,0,0,0,4.174H70.15a2.087,2.087,0,0,0,0-4.174Z" transform="translate(-60.011 -60)"/>
-                  </g>
-                </g>
-            </svg>
-            <h1>Portfolio</h1>
+    <div class="music-player">
+        <div class="header">procuro.exe</div>
+        <div class="content">
+            <img src="./assets/album.gif" alt="" class="album">
+            <div class="song-name"><a href="https://www.youtube.com/watch?v=-RFunvF0mDw">Now Playing: Nobody Here</a></div>
+            <div class="player">
+                <button onclick="volumeControl()" type="button">
+                    <img src="./assets/speaker.png" alt="" class="icon">
+                </button>
+            </div>
         </div>
-        <div class="mobile-flex">
-          <svg id="P_1_" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 54.268 71.244">
-            <g id="Group_43" data-name="Group 43" transform="translate(0)">
-              <path id="Path_21" data-name="Path 21" d="M78.378,71.244H61V0H84.276c8.281,0,13.6.352,16.247,1.075,8.446,2.262,14.746,10.029,14.746,21.56,0,11.961-6.992,20.078-16.221,22.13l-.039.008a75.007,75.007,0,0,1-14.108,1H78.378Zm-13.2-4.174H74.2V41.6H84.9a72.456,72.456,0,0,0,13.261-.911c6.256-1.4,12.933-6.873,12.933-18.05,0-8.889-4.466-15.606-11.656-17.529l-.011,0c-1.549-.424-5.435-.929-15.151-.929h-19.1Zm9.029-32.6v-23.2c2.324.016,1.491.036,5.353.025,4.578-.014,10.275-.031,13,.49a10.836,10.836,0,0,1,9.105,11.026,10.817,10.817,0,0,1-6.936,10.413c-3.173,1.264-9.557,1.223-14.687,1.19C75.7,34.393,76.558,34.441,74.2,34.473Zm4.174-4.235c.541,0,1.108.005,1.688.009,4.261.027,10.7.068,13.116-.894a6.687,6.687,0,0,0,4.306-6.535,6.694,6.694,0,0,0-5.7-6.923l-.014,0c-2.328-.446-8.274-.428-12.209-.416l-1.191,0V30.238Z" transform="translate(-61)"/>
-            </g>
-          </svg>
-          <h1>Procuro</h1>
+    </div>
+    <img src="./assets/cube.png" alt="" class="cube">
+    <video class="backgorund-video"src="./assets/background.mp4" id="background"muted loop autoplay></video>
+    <div class="start-menu">
+        <div class="menu-item start"><img src="./assets/start.png" alt="" class="icon">Hire Me</div>
+        <div class="seperator"></div>
+        <div class="start-bar-window"><img src="./assets/world.png" alt="" class="icon"> Website Home Page</div>
+        <div class="menu-item"><img src="./assets/portfolio.png" alt="" class="icon"> Portfolio</div>
+        <div class="menu-item"><img src="./assets/resume.png" alt="" class="icon">Resume</div>
+    </div>
+    <div class="page-content">
+        <div class="profile-card">
+            <div class="header">profile.card.exe</div>
+            <div class="content">
+                <div class="profile-details">
+                    <div class="mobile">
+                        ⚠ view site on desktop for the full experince ⚠
+                    </div>
+                    <div class="profile-name">Jarred Fourie🐵</div>
+                    <div class="profile-job">UX Engineer @ <a href="https://entelect.co.za/" title="Entelect Homepage">Entelect</a></div>
+                    <div class="profile-desc">HTML/CSS <strong>lunatic</strong> working to connect functionality with artistic expression. <br/> <br> Doing all my design work in Adobe Xd</div>
+                    <button class="windows-button">Resume</button>
+                </div>
+                <div class="social-media">
+                        <svg class="social" width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <a href="https://github.com/jarred2">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8C0 11.54 2.29 14.53 5.47 15.59C5.87 15.66 6.02 15.42 6.02 15.21C6.02 15.02 6.01 14.39 6.01 13.72C4 14.09 3.48 13.23 3.32 12.78C3.23 12.55 2.84 11.84 2.5 11.65C2.22 11.5 1.82 11.13 2.49 11.12C3.12 11.11 3.57 11.7 3.72 11.94C4.44 13.15 5.59 12.81 6.05 12.6C6.12 12.08 6.33 11.73 6.56 11.53C4.78 11.33 2.92 10.64 2.92 7.58C2.92 6.71 3.23 5.99 3.74 5.43C3.66 5.23 3.38 4.41 3.82 3.31C3.82 3.31 4.49 3.1 6.02 4.13C6.66 3.95 7.34 3.86 8.02 3.86C8.7 3.86 9.38 3.95 10.02 4.13C11.55 3.09 12.22 3.31 12.22 3.31C12.66 4.41 12.38 5.23 12.3 5.43C12.81 5.99 13.12 6.7 13.12 7.58C13.12 10.65 11.25 11.33 9.47 11.53C9.76 11.78 10.01 12.26 10.01 13.01C10.01 14.08 10 14.94 10 15.21C10 15.42 10.15 15.67 10.55 15.59C13.71 14.53 16 11.53 16 8C16 3.58 12.42 0 8 0Z" transform="scale(64)" fill="#1B1F23"/>
+                            </a>
+                        </svg> 
+                   
+                        <svg class="social" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                             <a  class="linked-in" href="https://www.linkedin.com/in/jarred-fourie-78a2bb168/">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 24C0 10.7452 10.7452 0 24 0C37.2548 0 48 10.7452 48 24C48 37.2548 37.2548 48 24 48C10.7452 48 0 37.2548 0 24ZM16.9605 19.8778H11.5216V36.2196H16.9605V19.8778ZM17.3188 14.8227C17.2835 13.2204 16.1377 12 14.277 12C12.4164 12 11.2 13.2204 11.2 14.8227C11.2 16.3918 12.3805 17.6473 14.2064 17.6473H14.2412C16.1377 17.6473 17.3188 16.3918 17.3188 14.8227ZM36.5754 26.8497C36.5754 21.8303 33.8922 19.4941 30.3131 19.4941C27.4254 19.4941 26.1326 21.0802 25.4107 22.1929V19.8783H19.9711C20.0428 21.4117 19.9711 36.22 19.9711 36.22H25.4107V27.0934C25.4107 26.605 25.446 26.1178 25.5898 25.7681C25.9829 24.7924 26.8779 23.7822 28.3805 23.7822C30.3494 23.7822 31.1365 25.2807 31.1365 27.4767V36.2196H36.5752L36.5754 26.8497Z" fill="black"/>
+                            </a>
+                        </svg> 
+                    
+                </div>
+                
+            </div>
         </div>
-        <div class="mobile-flex">
-          <svg id="outbox" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 71.244 71.244">
-            <g id="Group_28" data-name="Group 28">
-              <g id="Group_27" data-name="Group 27">
-                <path id="Path_13" data-name="Path 13" d="M71.243,48.132a2.107,2.107,0,0,0-.22-.92l-12.3-24.606V14.611a2.108,2.108,0,0,0-.612-1.477L45.586.612A2.105,2.105,0,0,0,44.109,0H18.785a6.269,6.269,0,0,0-6.262,6.262V22.606L.22,47.212a2.107,2.107,0,0,0-.22.92s0,.009,0,.013V64.982a6.269,6.269,0,0,0,6.262,6.262H64.982a6.269,6.269,0,0,0,6.262-6.262V48.145S71.243,48.137,71.243,48.132ZM58.721,31.94,65.78,46.058H58.721ZM46.2,7.126l5.4,5.4h-3.31A2.09,2.09,0,0,1,46.2,10.436ZM16.7,6.262a2.09,2.09,0,0,1,2.087-2.087H42.023v6.262A6.269,6.269,0,0,0,48.285,16.7h6.262v29.36H16.7ZM42.023,50.233V52.32a2.09,2.09,0,0,1-2.087,2.087H31.308a2.09,2.09,0,0,1-2.087-2.087V50.233ZM12.523,31.94V46.058H5.465ZM67.07,64.982a2.09,2.09,0,0,1-2.087,2.087H6.262a2.09,2.09,0,0,1-2.087-2.087V50.233H25.047V52.32a6.269,6.269,0,0,0,6.262,6.262h8.627A6.269,6.269,0,0,0,46.2,52.32V50.233H67.07Z"/>
-              </g>
-            </g>
-            <g id="Group_30" data-name="Group 30" transform="translate(20.872 8.349)">
-              <g id="Group_29" data-name="Group 29">
-                <path id="Path_14" data-name="Path 14" d="M156.262,60h-4.174a2.087,2.087,0,1,0,0,4.174h4.174a2.087,2.087,0,1,0,0-4.174Z" transform="translate(-150 -60)"/>
-              </g>
-            </g>
-            <g id="Group_32" data-name="Group 32" transform="translate(20.872 16.698)">
-              <g id="Group_31" data-name="Group 31">
-                <path id="Path_15" data-name="Path 15" d="M169.063,120H152.087a2.087,2.087,0,1,0,0,4.174h16.976a2.087,2.087,0,0,0,0-4.174Z" transform="translate(-150 -120)"/>
-              </g>
-            </g>
-            <g id="Group_34" data-name="Group 34" transform="translate(20.872 25.186)">
-              <g id="Group_33" data-name="Group 33">
-                <path id="Path_16" data-name="Path 16" d="M177.412,181H152.087a2.087,2.087,0,1,0,0,4.174h25.325a2.087,2.087,0,1,0,0-4.174Z" transform="translate(-150 -181)"/>
-              </g>
-            </g>
-            <g id="Group_36" data-name="Group 36" transform="translate(20.872 33.535)">
-              <g id="Group_35" data-name="Group 35">
-                <path id="Path_17" data-name="Path 17" d="M177.412,241H152.087a2.087,2.087,0,0,0,0,4.174h25.325a2.087,2.087,0,0,0,0-4.174Z" transform="translate(-150 -241)"/>
-              </g>
-            </g>
-          </svg>
-          <h1>Resume</h1>
-        </div>
-        <div class="mobile-flex">
-          <svg id="mail_2_" data-name="mail (2)" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 71.244 71.244">
-            <g id="Group_38" data-name="Group 38" transform="translate(0 0)">
-              <g id="Group_37" data-name="Group 37">
-                <path id="Path_18" data-name="Path 18" d="M69.41,28.749,58.721,18.06V14.75a6.269,6.269,0,0,0-6.262-6.262H49.137L43.915,3.365a11.561,11.561,0,0,0-16.307,0L22.385,8.488H19.063A6.269,6.269,0,0,0,12.8,14.75v3.3L1.852,28.732l-.018.018A6.22,6.22,0,0,0,0,33.177V64.983a6.272,6.272,0,0,0,6.262,6.262H64.982a6.272,6.272,0,0,0,6.262-6.262V33.177A6.221,6.221,0,0,0,69.41,28.749ZM58.721,23.963l7.484,7.484-7.484,7.484ZM30.537,6.339l.014-.014a7.376,7.376,0,0,1,10.42,0l.014.014,2.191,2.149H28.346ZM16.976,14.75a2.09,2.09,0,0,1,2.087-2.087h33.4a2.09,2.09,0,0,1,2.087,2.087V43.107l-4.2,4.2-7.207-7.241a10.436,10.436,0,0,0-14.755,0l-7.26,7.219-4.15-4.088ZM12.8,23.878v15.2l-7.75-7.636ZM4.174,64.132V36.438L18.165,50.222ZM7.14,67.07,31.334,43.016a6.262,6.262,0,0,1,8.852,0L64.129,67.07Zm59.93-2.963L53.292,50.264l4.817-4.817h0l8.96-8.96Z" transform="translate(0 0)"/>
-              </g>
-            </g>
-            <g id="Group_40" data-name="Group 40" transform="translate(21.151 21.011)">
-              <g id="Group_39" data-name="Group 39">
-                <path id="Path_19" data-name="Path 19" d="M162.436,151h-8.349a2.087,2.087,0,0,0,0,4.174h8.349a2.087,2.087,0,0,0,0-4.174Z" transform="translate(-152 -151)"/>
-              </g>
-            </g>
-            <g id="Group_42" data-name="Group 42" transform="translate(21.151 29.36)">
-              <g id="Group_41" data-name="Group 41">
-                <path id="Path_20" data-name="Path 20" d="M179.134,211H154.087a2.087,2.087,0,0,0,0,4.174h25.047a2.087,2.087,0,0,0,0-4.174Z" transform="translate(-152 -211)"/>
-              </g>
-            </g>
-          </svg>
-          
-          <h1>Contact</h1>
-        </div>
-    </header>
-
-    <aside class="sidebar">
-        <div class="side-contant">
-            <div class="close"></div>
-            <div class="title"><h1 class="bold">Jarred Fourie</h1></div>
-            <div class="description"><h2>UX Engineer & Front-end Developer</h2></div>
-            <nav class="side-nav">
-                <ul>
-                    <li class="nav-active"><a href="#" >Portfolio</a></li>
-                    <li><a href="#" >Procuro</a></li>
-                    <li><a href="#" >Resume</a></li>
-                    <li><a href="#" >Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </aside>
-
-    <section class="main">
-        <!-- <div class="page"> -->
-            <div class="box page-header drop-shadow">
-                <div class="title-box">
-                    <h1 class="bold">Portfolio</h1>
-                    <div class="box-menu">
-                      <span class="tooltiptext">Click me to create a new project.</span>
-                      <h1>Create New +</h1>
-                  </div>
+        <div class="work desktop">
+            <div class="tabs">
+                <a class="tab active" href="#">Work</a>
+                <a class="tab" href="#">Hobbies</a>
+            </div>
+            <div class="port-card">
+                <div class="header">procuro.exe</div>
+                <div class="content" title="View Procuro Books">
+                    <div class="details">
+                        <div class="windows-button view-button" title="View Procuro Books">View</div>
+                    </div>
+                    <img src="./assets/procuro.png" alt="Procuro books" class="screenshot">
                 </div>
             </div>
-
-            <!-- Portfolio Gird -->
-            <div class="portfolio-grid"> 
-              <div class="desktop-item" id="procuroFolder">
-                <div class="folder">
-                  <svg width="82" height="80" viewBox="0 0 82 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g id="folder">
-                        <path id="folder-back" d="M16.5594 10L8 18.5714V70H80V22.1008L76.4755 18.5714H50.7972L43.2448 10H16.5594Z" fill="url(#paint0_linear)" stroke="#808000"/>
-                        <g id="file">
-                            <rect id="Rectangle 1" x="38.9582" y="0.707107" width="59" height="45.61" transform="rotate(45 38.9582 0.707107)" fill="white" stroke="#666699"/>
-                            <path id="Vector 3" d="M7.5 33.4166L39 1.9166L80 42.9166" stroke="#CCFFFF"/>
-                            <g id="Group 8">
-                                <g id="Group 2">
-                                    <path id="Vector 6" d="M22.5 25L13 34.5" stroke="#CCFFFF" stroke-width="2"/>
-                                    <path id="Vector 5" d="M23.5 25L14 34.5" stroke="#3333CC" stroke-width="2"/>
-                                </g>
-                                <g id="Group 3">
-                                    <path id="Vector 6_2" d="M26.5 30L17 39.5" stroke="#CCFFFF" stroke-width="2"/>
-                                    <path id="Vector 5_2" d="M27.5 30L18 39.5" stroke="#3333CC" stroke-width="2"/>
-                                </g>
-                                <g id="Group 4">
-                                    <path id="Vector 6_3" d="M31.5 34L22 43.5" stroke="#CCFFFF" stroke-width="2"/>
-                                    <path id="Vector 5_3" d="M32.5 34L23 43.5" stroke="#3333CC" stroke-width="2"/>
-                                </g>
-                                <g id="Group 5">
-                                    <path id="Vector 6_4" d="M51.881 23L27 49" stroke="#CCFFFF" stroke-width="2"/>
-                                    <path id="Vector 5_4" d="M54.5 23L29.619 49" stroke="#3333CC" stroke-width="2"/>
-                                </g>
-                                <g id="Group 6">
-                                    <path id="Vector 6_5" d="M58.881 29L34 55" stroke="#CCFFFF" stroke-width="2"/>
-                                    <path id="Vector 5_5" d="M61.5 29L36.619 55" stroke="#3333CC" stroke-width="2"/>
-                                </g>
-                                <g id="Group 7">
-                                    <path id="Vector 6_6" d="M65.881 35L41 61" stroke="#CCFFFF" stroke-width="2"/>
-                                    <path id="Vector 5_6" d="M68.5 35L43.619 61" stroke="#3333CC" stroke-width="2"/>
-                                </g>
-                            </g>
-                            <rect id="Rectangle 2" x="39.176" y="7.9166" width="17" height="20.0478" transform="rotate(45 39.176 7.9166)" fill="#66FFFF"/>
-                            <path id="Vector 4" d="M25 21.9166L37 33.9166L51 19.9166" stroke="#3333CC"/>
-                        </g>
-                        <path id="folder-front" d="M80 79.5H10L1 43V38L3 36.5H70.5L80 62V79.5Z" fill="url(#paint1_linear)" stroke="#999900"/>
-                    </g>
-                    <defs>
-                        <linearGradient id="paint0_linear" x1="78.993" y1="68.4874" x2="17.4841" y2="9.58181" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#999900"/>
-                            <stop offset="1" stop-color="#CCCC66"/>
-                        </linearGradient>
-                        <linearGradient id="paint1_linear" x1="4" y1="38" x2="75" y2="78" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#FFFF99"/>
-                            <stop offset="1" stop-color="#FFCC99"/>
-                        </linearGradient>
-                    </defs>
-                </svg>                
-
+            <div class="port-card">
+                <div class="header">procuro.exe</div>
+                <div class="content" title="View Procuro Books">
+                    <div class="details">
+                        <div class="windows-button view-button" title="View Procuro Books">View</div>
+                    </div>
+                    <img src="./assets/procuro.png" alt="Procuro books" class="screenshot">
                 </div>
-                <h2>Procuro</h2>
-
-                <div id="procuroModal" class="modal">
-                  <div class="modal-menu">
-                    <h1>Procuro Book Store Managmenet</h1>
-                    <span class="close">&times;</span>
-                  </div>
-                  <!-- Modal content -->
-                  <div class="modal-content">
-                    <h2></h2>
-                    <p>Developed by: Jarred Fourie, Johann Schepers, Sean Groenewald</p>
-                  </div>
-                
-                </div>
-                
-              </div>
-
-              <div class="desktop-item" id="digitalArtFolder">
-                <div class="folder">
-                  <svg width="82" height="80" viewBox="0 0 82 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g id="folder">
-                        <path id="folder-back" d="M16.5594 10L8 18.5714V70H80V22.1008L76.4755 18.5714H50.7972L43.2448 10H16.5594Z" fill="url(#paint0_linear)" stroke="#808000"/>
-                        <g id="file">
-                            <rect id="Rectangle 1" x="38.9582" y="0.707107" width="59" height="45.61" transform="rotate(45 38.9582 0.707107)" fill="white" stroke="#666699"/>
-                            <path id="Vector 3" d="M7.5 33.4166L39 1.9166L80 42.9166" stroke="#CCFFFF"/>
-                            <g id="Group 8">
-                                <g id="Group 2">
-                                    <path id="Vector 6" d="M22.5 25L13 34.5" stroke="#CCFFFF" stroke-width="2"/>
-                                    <path id="Vector 5" d="M23.5 25L14 34.5" stroke="#3333CC" stroke-width="2"/>
-                                </g>
-                                <g id="Group 3">
-                                    <path id="Vector 6_2" d="M26.5 30L17 39.5" stroke="#CCFFFF" stroke-width="2"/>
-                                    <path id="Vector 5_2" d="M27.5 30L18 39.5" stroke="#3333CC" stroke-width="2"/>
-                                </g>
-                                <g id="Group 4">
-                                    <path id="Vector 6_3" d="M31.5 34L22 43.5" stroke="#CCFFFF" stroke-width="2"/>
-                                    <path id="Vector 5_3" d="M32.5 34L23 43.5" stroke="#3333CC" stroke-width="2"/>
-                                </g>
-                                <g id="Group 5">
-                                    <path id="Vector 6_4" d="M51.881 23L27 49" stroke="#CCFFFF" stroke-width="2"/>
-                                    <path id="Vector 5_4" d="M54.5 23L29.619 49" stroke="#3333CC" stroke-width="2"/>
-                                </g>
-                                <g id="Group 6">
-                                    <path id="Vector 6_5" d="M58.881 29L34 55" stroke="#CCFFFF" stroke-width="2"/>
-                                    <path id="Vector 5_5" d="M61.5 29L36.619 55" stroke="#3333CC" stroke-width="2"/>
-                                </g>
-                                <g id="Group 7">
-                                    <path id="Vector 6_6" d="M65.881 35L41 61" stroke="#CCFFFF" stroke-width="2"/>
-                                    <path id="Vector 5_6" d="M68.5 35L43.619 61" stroke="#3333CC" stroke-width="2"/>
-                                </g>
-                            </g>
-                            <rect id="Rectangle 2" x="39.176" y="7.9166" width="17" height="20.0478" transform="rotate(45 39.176 7.9166)" fill="#66FFFF"/>
-                            <path id="Vector 4" d="M25 21.9166L37 33.9166L51 19.9166" stroke="#3333CC"/>
-                        </g>
-                        <path id="folder-front" d="M80 79.5H10L1 43V38L3 36.5H70.5L80 62V79.5Z" fill="url(#paint1_linear)" stroke="#999900"/>
-                    </g>
-                    <defs>
-                        <linearGradient id="paint0_linear" x1="78.993" y1="68.4874" x2="17.4841" y2="9.58181" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#999900"/>
-                            <stop offset="1" stop-color="#CCCC66"/>
-                        </linearGradient>
-                        <linearGradient id="paint1_linear" x1="4" y1="38" x2="75" y2="78" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#FFFF99"/>
-                            <stop offset="1" stop-color="#FFCC99"/>
-                        </linearGradient>
-                    </defs>
-                </svg>                
-
-                </div>
-                <h2>Digital Art</h2>
-
-                <div id="digitalArtModal" class="modal">
-
-                  <!-- Modal content -->
-                  <div class="modal-content">
-                    <img src="assests/00-rei-ayanami.png" alt="">
-                    <img src="assests/01-shinji-ikari.png" alt="">
-                    <img src="assests/02-asuka-langley.png" alt="">
-                  </div>
-                
-                </div>
-              </div>
-
-              <div class="desktop-item">
-                <div class="folder">
-                  <svg width="82" height="80" viewBox="0 0 82 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g id="folder">
-                        <path id="folder-back" d="M16.5594 10L8 18.5714V70H80V22.1008L76.4755 18.5714H50.7972L43.2448 10H16.5594Z" fill="url(#paint0_linear)" stroke="#808000"/>
-                        <g id="file">
-                            <rect id="Rectangle 1" x="38.9582" y="0.707107" width="59" height="45.61" transform="rotate(45 38.9582 0.707107)" fill="white" stroke="#666699"/>
-                            <path id="Vector 3" d="M7.5 33.4166L39 1.9166L80 42.9166" stroke="#CCFFFF"/>
-                            <g id="Group 8">
-                                <g id="Group 2">
-                                    <path id="Vector 6" d="M22.5 25L13 34.5" stroke="#CCFFFF" stroke-width="2"/>
-                                    <path id="Vector 5" d="M23.5 25L14 34.5" stroke="#3333CC" stroke-width="2"/>
-                                </g>
-                                <g id="Group 3">
-                                    <path id="Vector 6_2" d="M26.5 30L17 39.5" stroke="#CCFFFF" stroke-width="2"/>
-                                    <path id="Vector 5_2" d="M27.5 30L18 39.5" stroke="#3333CC" stroke-width="2"/>
-                                </g>
-                                <g id="Group 4">
-                                    <path id="Vector 6_3" d="M31.5 34L22 43.5" stroke="#CCFFFF" stroke-width="2"/>
-                                    <path id="Vector 5_3" d="M32.5 34L23 43.5" stroke="#3333CC" stroke-width="2"/>
-                                </g>
-                                <g id="Group 5">
-                                    <path id="Vector 6_4" d="M51.881 23L27 49" stroke="#CCFFFF" stroke-width="2"/>
-                                    <path id="Vector 5_4" d="M54.5 23L29.619 49" stroke="#3333CC" stroke-width="2"/>
-                                </g>
-                                <g id="Group 6">
-                                    <path id="Vector 6_5" d="M58.881 29L34 55" stroke="#CCFFFF" stroke-width="2"/>
-                                    <path id="Vector 5_5" d="M61.5 29L36.619 55" stroke="#3333CC" stroke-width="2"/>
-                                </g>
-                                <g id="Group 7">
-                                    <path id="Vector 6_6" d="M65.881 35L41 61" stroke="#CCFFFF" stroke-width="2"/>
-                                    <path id="Vector 5_6" d="M68.5 35L43.619 61" stroke="#3333CC" stroke-width="2"/>
-                                </g>
-                            </g>
-                            <rect id="Rectangle 2" x="39.176" y="7.9166" width="17" height="20.0478" transform="rotate(45 39.176 7.9166)" fill="#66FFFF"/>
-                            <path id="Vector 4" d="M25 21.9166L37 33.9166L51 19.9166" stroke="#3333CC"/>
-                        </g>
-                        <path id="folder-front" d="M80 79.5H10L1 43V38L3 36.5H70.5L80 62V79.5Z" fill="url(#paint1_linear)" stroke="#999900"/>
-                    </g>
-                    <defs>
-                        <linearGradient id="paint0_linear" x1="78.993" y1="68.4874" x2="17.4841" y2="9.58181" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#999900"/>
-                            <stop offset="1" stop-color="#CCCC66"/>
-                        </linearGradient>
-                        <linearGradient id="paint1_linear" x1="4" y1="38" x2="75" y2="78" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#FFFF99"/>
-                            <stop offset="1" stop-color="#FFCC99"/>
-                        </linearGradient>
-                    </defs>
-                </svg>                
-
-                </div>
-                <h2>UX/UI Design</h2>
-              </div>
             </div>
-        <!-- </div> -->
-        
-    </section>
+        </div>
+        <div class="more-card desktop">
+            <div class="header">message</div>
+            <div class="content">
+                <div class="message">Want to see more?</div>
+                <div class="windows-button view-button" title="View Procuro Books">YES!!!!!!!</div>
+            </div>
+        </div>
+    </div>
 
     <script>
-      // Get the modal
-      var artModal = document.getElementById("digitalArtModal");
-      
-      // Get the button that opens the modal
-      var artFolder = document.getElementById("digitalArtFolder");
-      
-      // Get the <span> element that closes the modal
-      // var span = document.getElementsByClassName("close")[0];
-      
-      // When the user clicks the button, open the modal 
-      artFolder.onclick = function() {
-        artModal.style.display = "block";
-      }
-      
-      // When the user clicks on <span> (x), close the modal
-      // span.onclick = function() {
-      //   artModal.style.display = "none";
-      // }
+        var gfg = document.getElementById("music");
+        var muted = false;
 
-      // Get the modal
-      var procuroModal = document.getElementById("procuroModal");
-      
-      // Get the button that opens the modal
-      var procuroFolder = document.getElementById("procuroFolder");
-      
-      // Get the <span> element that closes the modal
-      // var span = document.getElementsByClassName("close")[0];
-      
-      // When the user clicks the button, open the modal 
-      procuroFolder.onclick = function() {
-        procuroModal.style.display = "block";
-      }
-      
-      // When the user clicks on <span> (x), close the modal
-      // span.onclick = function() {
-      //   procuroModal.style.display = "none";
-      // }
-      
-      // When the user clicks anywhere outside of the modal, close it
-      window.onclick = function(event) {
-        if (event.target == procuroModal) {
-          procuroModal.style.display = "none";
-        }
-        if (event.target == artModal) {
-          artModal.style.display = "none";
-        }
-      }
-    </script>
+        window.onload = function() {
+            gfg.volume = 0.07;
+        };
+
+        function volume() { 
+            alert(gfg.volume);
+        } 
+          
+        function volumeControl() {
+            if(muted){
+                gfg.volume = 0.05;
+                muted = !muted;
+            }else{
+                gfg.volume = 0;
+                muted = !muted;
+            }
+        } 
+    </script> 
 </body>
 </html>
