@@ -16,10 +16,7 @@ body {
     background-position: top -50px left 0px;
     background-image: url('../assets/portfolio-background.png');
 }
-p{
-    font-size: 4vw;
-    margin-right: 100px;
-}
+
 .projects-card{
     transform: scale(.8);
     z-index: 100000;
@@ -61,15 +58,37 @@ p{
         }
     }
 }
+.card-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .title{
+        display: flex;
+        align-items: center;
+        font-size: 1.4rem;
+        margin-bottom: .75rem;
+        .icon{
+            width: 20px;
+            height: 20px;
+            margin-right: 1rem;
+        }
+    }
+    .description{
+        hyphens: auto;
+        font-size: 1.25rem;
+    }
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    transform: translateY(10%);
+}
 
 .project-intro-card{
+    margin-left: 2rem;
     width: 400px;
-    .card-content{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
     .screenshot{
         padding-top: 5px;
         width: calc(100% - 10px);
@@ -85,4 +104,39 @@ p{
         -moz-box-shadow: inset 2px 2px 0px 0px rgba(0,0,0,0.75), 1px 1px grey;
         box-shadow:inset 2px 2px 0px 0px rgba(0,0,0,0.75), 1px 1px grey;
     }
+}
+
+.project-roles{
+    width: 290px;
+    transform: translate(-40%,-60%);
+    .card-content{
+        padding: 1rem;
+    }
+}
+
+.project-info {
+    transform: translate(-10%,70%);
+    width: 400px;
+    .card-content{
+        padding: 1rem;
+    }
+}
+
+.project-actions{
+    transform: translate(60%,-150%);
+    height: 176px;
+    width: 400px;
+    .card-content{
+        padding: 1rem;
+    }
+    .buttons{
+        margin-top: 1rem;
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+}
+
+.project-seperator{
+    width: 450px;
 }

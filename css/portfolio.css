@@ -23,11 +23,6 @@ body {
   background-image: url("../assets/portfolio-background.png");
 }
 
-p {
-  font-size: 4vw;
-  margin-right: 100px;
-}
-
 .projects-card {
   -webkit-transform: scale(0.8);
           transform: scale(0.8);
@@ -86,11 +81,7 @@ p {
           transform: scale(1);
 }
 
-.project-intro-card {
-  width: 400px;
-}
-
-.project-intro-card .card-content {
+.card-content {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -102,6 +93,47 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.card-content .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.4rem;
+  margin-bottom: .75rem;
+}
+
+.card-content .title .icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 1rem;
+}
+
+.card-content .description {
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+  font-size: 1.25rem;
+}
+
+.column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transform: translateY(10%);
+          transform: translateY(10%);
+}
+
+.project-intro-card {
+  margin-left: 2rem;
+  width: 400px;
 }
 
 .project-intro-card .screenshot {
@@ -118,5 +150,51 @@ p {
   text-align: left;
   -webkit-box-shadow: inset 2px 2px 0px 0px rgba(0, 0, 0, 0.75), 1px 1px grey;
   box-shadow: inset 2px 2px 0px 0px rgba(0, 0, 0, 0.75), 1px 1px grey;
+}
+
+.project-roles {
+  width: 290px;
+  -webkit-transform: translate(-40%, -60%);
+          transform: translate(-40%, -60%);
+}
+
+.project-roles .card-content {
+  padding: 1rem;
+}
+
+.project-info {
+  -webkit-transform: translate(-10%, 70%);
+          transform: translate(-10%, 70%);
+  width: 400px;
+}
+
+.project-info .card-content {
+  padding: 1rem;
+}
+
+.project-actions {
+  -webkit-transform: translate(60%, -150%);
+          transform: translate(60%, -150%);
+  height: 176px;
+  width: 400px;
+}
+
+.project-actions .card-content {
+  padding: 1rem;
+}
+
+.project-actions .buttons {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.project-seperator {
+  width: 450px;
 }
 /*# sourceMappingURL=portfolio.css.map */
