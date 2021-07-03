@@ -7,6 +7,130 @@
   font-family: 'VT323', monospace;
 }
 
+.start-menu {
+  padding: 7px;
+  -webkit-box-shadow: inset 1px 0 #fff;
+          box-shadow: inset 1px 0 #fff;
+  background-color: silver;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-top: 1px solid #f4f4f4;
+  border-bottom: 1px solid #4e4e4e;
+  position: fixed;
+  z-index: 99999;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.start-menu a {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+}
+
+.start-menu .menu-item {
+  margin-left: 2px;
+  margin-bottom: 2px;
+  vertical-align: middle;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2px 6px 3px;
+  background-color: silver;
+  border-top: 1px solid #fff;
+  border-left: 1px solid #fff;
+  border-right: 1px solid gray;
+  border-bottom: 1px solid gray;
+  -webkit-box-shadow: inset 1px 1px #dfdfdf, 1px 0 #000, 0 1px #000, 1px 1px #000;
+          box-shadow: inset 1px 1px #dfdfdf, 1px 0 #000, 0 1px #000, 1px 1px #000;
+  min-width: 59px;
+  margin-right: 6px;
+  color: #000;
+  position: relative;
+}
+
+.start-menu .menu-item:focus, .start-menu .menu-item:hover {
+  outline: 2px solid black;
+}
+
+.start-menu .seperator {
+  background-color: #f0f0f0;
+  -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.45);
+          box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.45);
+  color: #f0f0f0;
+  width: 3px;
+  border-radius: 2px;
+  margin-right: 10px;
+  height: 100%;
+  padding-bottom: 25px;
+}
+
+.start-menu .start-bar-window {
+  display: none;
+}
+
+@media only screen and (min-width: 900px) {
+  .start-menu .start-bar-window {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 2px 6px 3px;
+    margin-bottom: 2px;
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+    -webkit-box-shadow: inset 1px 1px grey;
+            box-shadow: inset 1px 1px grey;
+    background-image: url("../assets/tab_background.png");
+    margin-right: 5px;
+  }
+  .start-menu .start-bar-window:focus, .start-menu .start-bar-window:hover {
+    outline: 2px solid black;
+  }
+}
+
+.start-menu .menu-end {
+  display: none;
+}
+
+@media only screen and (min-width: 900px) {
+  .start-menu .menu-end {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border: unset;
+    margin: 0 0 0 auto !important;
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+    -webkit-box-shadow: inset 1px 1px grey;
+            box-shadow: inset 1px 1px grey;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
 body {
   overflow: hidden;
 }
