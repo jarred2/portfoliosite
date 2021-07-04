@@ -17,6 +17,7 @@ body {
 }
 
 .page-content {
+  margin-left: 10rem;
   width: 200vw;
   background-size: cover;
   background-position: top -50px left 0px;
@@ -132,6 +133,8 @@ body {
 }
 
 .project-intro-card {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
   margin-left: 2rem;
   width: 400px;
 }
@@ -154,8 +157,8 @@ body {
 
 .project-roles {
   width: 290px;
-  -webkit-transform: translate(-40%, -60%);
-          transform: translate(-40%, -60%);
+  -webkit-transform: translate(-40%, -60%) scale(0.85);
+          transform: translate(-40%, -60%) scale(0.85);
 }
 
 .project-roles .card-content {
@@ -163,8 +166,8 @@ body {
 }
 
 .project-info {
-  -webkit-transform: translate(-10%, 70%);
-          transform: translate(-10%, 70%);
+  -webkit-transform: translate(-10%, 70%) scale(0.9);
+          transform: translate(-10%, 70%) scale(0.9);
   width: 400px;
 }
 
@@ -195,7 +198,13 @@ body {
 }
 
 .project-seperator {
-  width: 450px;
+  width: 350px;
+}
+
+@media only screen and (min-width: 1600px) {
+  .project-seperator {
+    width: 450px;
+  }
 }
 
 .start-menu {

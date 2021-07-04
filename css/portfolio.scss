@@ -11,6 +11,7 @@ body {
     position: fixed;
 }
 .page-content{
+    margin-left: 10rem;
     width: 200vw;
     background-size: cover;
     background-position: top -50px left 0px;
@@ -87,6 +88,7 @@ body {
 }
 
 .project-intro-card{
+    transform: scale(1.1);
     margin-left: 2rem;
     width: 400px;
     .screenshot{
@@ -108,14 +110,14 @@ body {
 
 .project-roles{
     width: 290px;
-    transform: translate(-40%,-60%);
+    transform: translate(-40%,-60%) scale(.85);
     .card-content{
         padding: 1rem;
     }
 }
 
 .project-info {
-    transform: translate(-10%,70%);
+    transform: translate(-10%,70%) scale(.9);
     width: 400px;
     .card-content{
         padding: 1rem;
@@ -139,7 +141,10 @@ body {
 
 
 .project-seperator{
-    width: 450px;
+    width: 350px;
+    @media only screen and (min-width: 1600px){
+        width: 450px;   
+    }
 }
 .start-menu{
     .icon{
