@@ -163,7 +163,7 @@ svg{
 }
 
 .start-menu{
-    animation: menuUp ease-out .5s backwards 1s;
+    animation: menuUp ease-out .5s backwards .5s;
 }
 
 @keyframes menuUp {

@@ -238,8 +238,8 @@ svg {
 }
 
 .start-menu {
-  -webkit-animation: menuUp ease-out .5s backwards 1s;
-          animation: menuUp ease-out .5s backwards 1s;
+  -webkit-animation: menuUp ease-out .5s backwards .5s;
+          animation: menuUp ease-out .5s backwards .5s;
 }
 
 @-webkit-keyframes menuUp {
