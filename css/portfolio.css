@@ -41,7 +41,7 @@ body {
 }
 
 .page-background {
-  position: absolute;
+  position: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   display: -webkit-box;
@@ -75,7 +75,7 @@ body {
 }
 
 .page-content {
-  margin-left: 10rem;
+  margin-left: 5rem;
   width: 200vw;
   -webkit-transform: translateZ(999px) scale(0.9);
   transform: translateZ(999px) scale(0.9);
