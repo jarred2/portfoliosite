@@ -14,10 +14,18 @@
         <source src="./assets/nobodyhere.mp3" type="audio/mp3">
     </audio>
 
-    <div class="music-player">
-        <div class="header">procuro.exe</div>
+    <div class="windows-container music-player">
+        <div class="header">Music Player
+            <div class="buttons">
+                <button class="windows-button">
+                    <img src="./assets/question-icon.png" alt="">
+                </button>
+                <button class="windows-button">
+                    <img src="./assets/close-icon.png" alt="">
+                </button>
+            </div>
+        </div>
         <div class="content">
-            <img src="./assets/album.png" alt="" class="album">
             <div class="song-name"><a href="https://www.youtube.com/watch?v=-RFunvF0mDw">Now Playing: Nobody Here</a></div>
             <div class="player">
                 <button onclick="volumeControl()" type="button" id="music-volume">
@@ -27,40 +35,55 @@
             </div>
         </div>
     </div>
-    <img src="./assets/cube.png" alt="" class="cube">
+    <!-- <img src="./assets/cube.png" alt="" class="cube"> -->
     <video class="background-video"src="./assets/background.mp4" id="background"muted loop autoplay></video>
     <div class="start-menu">
         <a href="#"><div class="menu-item start"><img src="./assets/start.png" alt="" class="icon">Hire Me</div></a>
         <div class="seperator"></div>
         <a href="index.html"><div class="start-bar-window"><img src="./assets/world.png" alt="" class="icon">Website Home Page</div></a>
-        <a href="./portfolio.html"><div class="menu-item"><img src="./assets/portfolio.png" alt="" class="icon"> Portfolio</div></a>
+        <!-- <a href="./portfolio.html"><div class="menu-item"><img src="./assets/portfolio.png" alt="" class="icon"> Portfolio</div></a> -->
         <a href="./assets/jarredfourie_resume.pdf"><div class="menu-item"><img src="./assets/resume.png" alt="" class="icon">Resume</div></a>
         <div class="menu-item menu-end"><img src="./assets/calendar.png" alt="" class="icon">4:20 PM</div>
     </div>
     <div class="page-content">
-        <div class="profile-card window-card">
-            <div class="header">profile.card.exe</div>
+        <div class="windows-container profile-window">
+            <div class="header">
+                <div>Jarred Fourie Profile</div>
+                <div class="buttons">
+                    <button class="windows-button">
+                        <img src="./assets/question-icon.png" alt="">
+                    </button>
+                    <button class="windows-button">
+                        <img src="./assets/close-icon.png" alt="">
+                    </button>
+                </div>
+            </div>
             <div class="content">
                 <div class="profile-details">
                     <div class="mobile">
                         ⚠ view site on desktop for the full experince ⚠
                     </div>
-                    <div class="profile-name">Jarred Fourie</div>
-                    <div class="profile-job">UX/UI Designer</div>
-                    <div class="profile-desc">HTML/CSS <strong>lunatic</strong> working to connect functionality with artistic expression. <br/> <br> Hours worked is nothing compared to value added. <br/> <br> Let's work together on your next project.</div>
-                    <a href="./assets/jarredfourie_resume.pdf" class="resume"><button class="windows-button">Resume</button></a> 
+                    <div class="profile-job">Full-stack Designer</div>
+                    <div class="profile-name">Creating web experinces</div>
+                    <div class="profile-desc">Freelance Digital Designer with a expertise in UI/UX, Web Design & Problem Solving.</div>
+                    <div class="location"><img src="./assets/world.png" alt="" class="loading-icon">Johannesburg, South Africa</div>
+                    <a target="_blank" href="./assets/jarredfourie_resume.pdf" class="resume"><button class="windows-button">Let's work together</button></a> 
                 </div>
                 <div class="social-media">
-                    <a href="https://www.behance.net/jarredfourie">
+                    <a target="_blank" href="https://www.behance.net/jarredfourie">
                         <svg class="social" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8.84 10.835h-1.965v-1.859h1.783c1.878 0 1.646 1.859.182 1.859zm5.789 1.058h2.624c-.115-1.687-2.36-1.81-2.624 0zm-5.9.396h-1.854v1.947h1.824c1.782-.001 1.673-1.947.03-1.947zm15.271-.289c0 6.627-5.373 12-12 12s-12-5.373-12-12 5.373-12 12-12 12 5.373 12 12zm-13.357-.733c1.668-.853 1.607-3.981-1.587-4.028h-4.056v8.73h3.771c3.958 0 3.891-3.967 1.872-4.702zm3.357-3.166h4v-.875h-4v.875zm4.943 3.693c-.545-3.505-6.053-3.711-6.053.872 0 4.526 5.18 3.818 5.949 1.56h-1.848c-.645.748-2.508.531-2.404-1.184h4.41c.009-.555-.009-.953-.054-1.248z"/></svg>
-                    </a>
-                            
-                    <a class="linked-in" href="https://www.linkedin.com/in/jarred-fourie-78a2bb168/">
+                    </a>    
+                    <a target="_blank" class="linked-in" href="https://www.linkedin.com/in/jarred-fourie-78a2bb168/">
                         <svg class="social" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M0 24C0 10.7452 10.7452 0 24 0C37.2548 0 48 10.7452 48 24C48 37.2548 37.2548 48 24 48C10.7452 48 0 37.2548 0 24ZM16.9605 19.8778H11.5216V36.2196H16.9605V19.8778ZM17.3188 14.8227C17.2835 13.2204 16.1377 12 14.277 12C12.4164 12 11.2 13.2204 11.2 14.8227C11.2 16.3918 12.3805 17.6473 14.2064 17.6473H14.2412C16.1377 17.6473 17.3188 16.3918 17.3188 14.8227ZM36.5754 26.8497C36.5754 21.8303 33.8922 19.4941 30.3131 19.4941C27.4254 19.4941 26.1326 21.0802 25.4107 22.1929V19.8783H19.9711C20.0428 21.4117 19.9711 36.22 19.9711 36.22H25.4107V27.0934C25.4107 26.605 25.446 26.1178 25.5898 25.7681C25.9829 24.7924 26.8779 23.7822 28.3805 23.7822C30.3494 23.7822 31.1365 25.2807 31.1365 27.4767V36.2196H36.5752L36.5754 26.8497Z" fill="black"/>
                         </svg> 
                     </a>
-                            
+                    <a target="_blank" href="https://twitter.com/jarredfourie">
+                        <svg class="social" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.066 9.645c.183 4.04-2.83 8.544-8.164 8.544-1.622 0-3.131-.476-4.402-1.291 1.524.18 3.045-.244 4.252-1.189-1.256-.023-2.317-.854-2.684-1.995.451.086.895.061 1.298-.049-1.381-.278-2.335-1.522-2.304-2.853.388.215.83.344 1.301.359-1.279-.855-1.641-2.544-.889-3.835 1.416 1.738 3.533 2.881 5.92 3.001-.419-1.796.944-3.527 2.799-3.527.825 0 1.572.349 2.096.907.654-.128 1.27-.368 1.824-.697-.215.671-.67 1.233-1.263 1.589.581-.07 1.135-.224 1.649-.453-.384.578-.87 1.084-1.433 1.489z"/></svg>   
+                    </a>  
+                    <a target="_blank" href="https://twitter.com/jarredfourie">
+                        <svg class="social" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M11.455 9.985c-1.419.417-3.11.632-5.067.646.405-1.654 1.518-3.03 3.003-3.784.777 1.016 1.464 2.063 2.064 3.138zm.965 1.93c-.124-.28-.254-.559-.391-.835-1.622.51-3.561.769-5.804.772l-.008.148c0 1.404.504 2.692 1.34 3.695 1.266-1.901 2.891-3.164 4.863-3.78zm-3.97 4.641c1.569 1.225 3.671 1.589 5.624.836-.252-1.488-.65-2.94-1.19-4.352-1.819.542-3.285 1.714-4.434 3.516zm7.075-9.13c-.977-.754-2.197-1.209-3.525-1.209-.49 0-.964.068-1.418.184.764 1.028 1.441 2.086 2.035 3.172 1.236-.524 2.204-1.24 2.908-2.147zm8.475 4.574c0 6.627-5.373 12-12 12s-12-5.373-12-12 5.373-12 12-12 12 5.373 12 12zm-5 0c0-3.866-3.135-7-7-7s-7 3.134-7 7 3.135 7 7 7 7-3.134 7-7zm-5.824-1.349c.157.324.305.651.447.98 1.26-.217 2.641-.204 4.143.042-.073-1.292-.566-2.474-1.354-3.403-.807 1.005-1.89 1.798-3.236 2.381zm.914 2.132c.489 1.309.865 2.651 1.119 4.023 1.312-.88 2.241-2.284 2.497-3.909-1.317-.228-2.522-.268-3.616-.114z"/></svg>
+                    </a>
                 </div>
                 
             </div>
@@ -68,8 +91,85 @@
         <div class="work desktop">
             <div class="tabs">
                 <a class="tab active" href="#">最高の F e a t u r e d __ P r o j e c t s</a>
+            </div> 
+            <div class="windows-container browser-window">
+                <div class="header">
+                    <div>Portfolio Explorer</div>
+                    <div class="buttons">
+                        <button class="windows-button">
+                            <img src="./assets/question-icon.png" alt="">
+                        </button>
+                        <button class="windows-button">
+                            <img src="./assets/close-icon.png" alt="">
+                        </button>
+                    </div>
+                </div>
+                <div class="address-bar">
+                    <div class="address"><div class="seperator"></div><span>Location:</span></div>
+                    <div class="search-bar"><img src="./assets/computer.png" alt=""> <span>C:/portfolio/feature-projects.pdf</span></div>
+                    <div class="actions">
+                        <button class="windows-button">
+                        <img src="./assets/close-icon.png" alt="">
+                    </button>
+                </div>
+                </div>
+                <div class="window">
+                    <div class="window-wrapper">
+                        <div class="window-content">
+                            <div class="banner">
+                                <div class="more">Want to See More?</div>
+                                <div class="windows-button">View Entire Portfolio</div>
+                            </div>
+                            <div class="portfolio-page">
+                                <div class="portfolio-item">
+                                    <a target="_blank" href="https://www.behance.net/gallery/123738889/Purrfect-Match-Mobile-App-Cat-Matcher-UX-UI" class="project-image">
+                                        <img src="./assets/purrfect-match.png" alt="" class="project-screenshot">
+                                        <div class="project-name">View On Behance</div>
+                                    </a>
+                                    <div class="project-desc">
+                                        <span>
+                                            Purrfect match
+                                        </span>
+                                        <span>
+                                            Mobile App Case Study
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="portfolio-item">
+                                    <a target="_blank" href="https://www.behance.net/gallery/123388915/Clarkson-Barbershop-Responsive-website-design" class="project-image">
+                                        <img src="./assets/clarkson.png" alt="" class="project-screenshot">
+                                        <div class="project-name">View On Behance</div>
+                                    </a>
+                                    <div class="project-desc">
+                                        <span>
+                                            Barbershop landing page
+                                        </span>
+                                        <span>
+                                            Responsive Website Design
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="portfolio-item">
+                                    <a target="_blank" href="https://www.behance.net/gallery/124070715/Dairy-Cow-Store-Website-Design-Landing-page" class="project-image">
+                                        <img src="./assets/smithsdairy.png" alt="" class="project-screenshot">
+                                        <div class="project-name">View On Behance</div>
+                                    </a>
+                                    <div class="project-desc">
+                                        <span>
+                                            Smiths Dairy
+                                        </span>
+                                        <span>
+                                            Responsive Website Design
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="more-information"><img src="./assets/world.png" alt="" class="loading-icon">loaded http://jarredfourie.com/past-projects</div>
             </div>
-            <div class="wrapper">
+            <!-- <div class="wrapper">
                 <div class="port-card">
                     <div class="header">cat.exe</div>
                     <div class="content" title="View Procuro Books">
@@ -91,9 +191,9 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
-        <div class="more-card desktop">
+        <!-- <div class="more-card desktop">
             <div class="header">message</div>
             <div class="content">
                 <div class="message">Looking for more?</div>
@@ -102,7 +202,7 @@
                     <a href="./portfolio.html"><div class="small-button" title="View Procuro Books">YES!!!</div></a>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
 
     <script>

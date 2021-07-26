@@ -177,36 +177,6 @@ strong {
   text-decoration: underline;
 }
 
-.header {
-  color: #fff;
-  display: -ms-grid;
-  display: grid;
-  place-items: center;
-  height: 33px;
-  background: #e180f6;
-  margin-left: 3px;
-  margin-top: 3px;
-  background: linear-gradient(280deg, #e180f6 0%, #5bdbff 100%);
-  position: relative;
-  border-radius: 5px 5px 0 0;
-}
-
-.header::before, .header::after {
-  content: '';
-  position: absolute;
-  width: 25%;
-  height: 2px;
-  background-color: #E9F3F9;
-}
-
-.header::after {
-  left: 1rem;
-}
-
-.header::before {
-  right: 1rem;
-}
-
 .page-content {
   background-size: cover;
   background-repeat: no-repeat;

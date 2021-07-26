@@ -6,7 +6,6 @@
     margin: 0;
     font-family: 'VT323', monospace;
 }
-
 .start-menu{
     a{
         color: inherit;
@@ -142,33 +141,6 @@ a{
 }
 strong{
     text-decoration: underline;
-}
-
-.header{
-    color: #fff;
-    display: grid;
-    place-items: center;
-    height: 33px;
-    background: rgb(225,128,246);
-    margin-left: 3px;
-    margin-top: 3px;
-    background: linear-gradient(280deg, rgba(225,128,246,1) 0%, rgba(91,219,255,1) 100%);
-    position: relative;
-    border-radius: 5px 5px 0 0;
-    &::before,
-    &::after{
-        content: '';
-        position: absolute;
-        width: 25%;
-        height: 2px;
-        background-color: #E9F3F9;
-    }
-    &::after{
-        left: 1rem;
-    }
-    &::before{
-        right: 1rem;
-    }
 }
 
 .page-content{
