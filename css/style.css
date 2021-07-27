@@ -1,10 +1,12 @@
 .windows-container {
+  position: relative;
   height: 550px;
   background-color: #c6c6c6;
   border-top: 2px solid #efefef;
   border-left: 2px solid #efefef;
   border-right: 2px solid #000;
   border-bottom: 2px solid #000;
+  overflow-y: hidden;
 }
 
 .windows-container .windows-button {
@@ -138,6 +140,7 @@
 }
 
 .windows-container .window-wrapper {
+  position: relative;
   height: 100%;
   padding: 10px .25rem 0 .25rem;
   border-left: 1px solid #dfdfdf;
@@ -151,12 +154,13 @@
   border-top: 2px solid #2c2c2c;
   border-left: 2px solid #2c2c2c;
   height: 100%;
-  width: 100%;
-  background: #fff;
+  background: #1e9899;
 }
 
 .windows-container .window-wrapper .window-content .banner {
+  z-index: 100;
   padding: 1rem;
+  width: 100%;
   border-bottom: 2px solid #2c2c2c;
   background: linear-gradient(280deg, #e180f6 0%, #5bdbff 100%);
   -webkit-box-pack: justify;
@@ -171,12 +175,104 @@
 }
 
 .windows-container .window-wrapper .window-content .banner .more {
+  margin-right: 2rem;
   font-size: 1.25rem;
 }
 
 .windows-container .window-wrapper .window-content .banner .windows-button {
   padding: 1rem 2rem;
   width: auto;
+}
+
+.windows-container .window-wrapper .window-content .wrapping {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.windows-container .window-wrapper .window-content .quick-link {
+  margin-right: 2rem;
+  text-decoration: underline;
+}
+
+.windows-container .window-wrapper .window-content .portfolio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.windows-container .window-wrapper .window-content .portfolio .section-title {
+  margin-bottom: 1rem;
+}
+
+.windows-container .window-wrapper .window-content .portfolio .port-project {
+  margin-bottom: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media only screen and (min-width: 1200px) {
+  .windows-container .window-wrapper .window-content .portfolio .port-project {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 400px 1fr;
+        grid-template-columns: 400px 1fr;
+    grid-gap: 2rem;
+  }
+  .windows-container .window-wrapper .window-content .portfolio .port-project .details {
+    max-width: 60ch;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.windows-container .window-wrapper .window-content .portfolio .port-project a {
+  text-decoration: underline;
+  color: purple;
+  font-size: 1.25rem;
+}
+
+.windows-container .window-wrapper .window-content .portfolio .port-project .tag-line {
+  margin-bottom: 1rem;
+}
+
+.windows-container .window-wrapper .window-content .portfolio .port-project .tag-line .title {
+  font-size: 2rem;
+}
+
+.windows-container .window-wrapper .window-content .portfolio .port-project .desc {
+  font-size: 1.25rem;
+  margin-bottom: .5rem;
+}
+
+.windows-container .window-wrapper .window-content .portfolio .port-project img {
+  width: 100%;
+}
+
+@media only screen and (min-width: 800px) {
+  .windows-container .window-wrapper .window-content .portfolio .port-project img {
+    max-height: 400px;
+  }
 }
 
 .windows-container .window-wrapper .window-content .portfolio-page {
@@ -198,6 +294,12 @@
 }
 
 .windows-container .window-wrapper .window-content .portfolio-page .portfolio-item {
+  border-radius: 8px;
+  border-top: 2px solid #dfdfdf;
+  border-left: 2px solid #dfdfdf;
+  border-right: 2px solid #7f7f7f;
+  border-bottom: 2px solid #7f7f7f;
+  background-color: darkgray;
   width: 80%;
 }
 
@@ -209,7 +311,7 @@
 
 .windows-container .window-wrapper .window-content .portfolio-page .portfolio-item .project-desc {
   font-size: 1.25rem;
-  padding: .25rem 0;
+  padding: .25rem 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -245,7 +347,7 @@
 }
 
 .windows-container .window-wrapper .window-content .portfolio-page .portfolio-item .project-screenshot {
-  border-radius: 8px;
+  border-radius: 8px 8px 0 0;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;

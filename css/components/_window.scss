@@ -1,4 +1,5 @@
 .windows-container{
+    position: relative;
     .windows-button{
 
         width: 16px;
@@ -97,10 +98,11 @@
         }
     }
     .window{
-        
         height: calc(100% - 88px);
     }
+    overflow-y: hidden;
     .window-wrapper{
+        position: relative;
         height: 100%;
         padding: 10px .25rem 0 .25rem;
         border-left: 1px solid #dfdfdf;
@@ -112,21 +114,75 @@
             border-top: 2px solid rgb(44, 44, 44);
             border-left: 2px solid rgb(44, 44, 44);
             height: 100%;
-            width: 100%;
-            background: #fff;
+            background: rgba(30,152,153,1);
             .banner{
+                z-index: 100;
                 padding: 1rem;
+                width: 100%;
                 border-bottom: 2px solid rgb(44, 44, 44);
                 background: linear-gradient(280deg, rgba(225,128,246,1) 0%, rgba(91,219,255,1) 100%);
                 justify-content: space-between;
                 display: flex;
                 align-items: center;
                 .more{
+                    margin-right: 2rem;
                     font-size: 1.25rem;
                 }
                 .windows-button{
                     padding: 1rem 2rem;
                     width: auto;
+                }
+            }
+            .wrapping{
+                display: flex;
+                align-items: center;
+            }
+            .quick-link{
+                margin-right: 2rem;
+                text-decoration: underline;
+            }
+            .portfolio{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .section-title{
+                    margin-bottom: 1rem;
+                }
+                .port-project{
+                    margin-bottom: 2rem;
+                    display: flex;
+                    flex-direction: column;
+                    @media only screen and (min-width: 1200px) {
+                        display: grid;
+                        grid-template-columns: 400px 1fr;
+                        grid-gap: 2rem;
+                        .details{
+                            max-width: 60ch;
+                            display: flex;
+                            flex-direction: column;
+                        }
+                    }
+                    a{
+                        text-decoration: underline;
+                        color: purple;
+                        font-size: 1.25rem;
+                    }
+                    .tag-line{
+                        margin-bottom: 1rem;
+                        .title{
+                            font-size: 2rem;
+                        }
+                    }
+                    .desc{
+                        font-size: 1.25rem;
+                        margin-bottom: .5rem;
+                    }
+                    img{
+                        width: 100%;
+                        @media only screen and (min-width: 800px) {
+                            max-height: 400px;
+                        }
+                    };
                 }
             }
             .portfolio-page{
@@ -140,13 +196,19 @@
                     grid-template-columns: 1fr 1fr;
                 }
                 .portfolio-item{
+                    border-radius: 8px;
+                    border-top: 2px solid #dfdfdf;
+                    border-left: 2px solid #dfdfdf;
+                    border-right: 2px solid #7f7f7f;
+                    border-bottom: 2px solid #7f7f7f;
+                    background-color: darkgray;
                     width: 80%;
                     @media only screen and (min-width: 1350px) {
                         width: 100%;
                     }
                     .project-desc{
                         font-size: 1.25rem;
-                        padding: .25rem 0;
+                        padding: .25rem 1rem;
                         display: flex;
                         justify-content: space-between;
                     }
@@ -171,7 +233,7 @@
                         }
                     }
                     .project-screenshot{
-                        border-radius: 8px;
+                        border-radius: 8px 8px 0 0;
                         width: 100%;
                         object-fit: cover;
                         aspect-ratio: 16 / 9;
