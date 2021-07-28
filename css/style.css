@@ -147,20 +147,12 @@
   border-top: 1px solid #dfdfdf;
   border-right: 1px solid #7f7f7f;
   border-bottom: 1px solid #7f7f7f;
+  position: relative;
 }
 
-.windows-container .window-wrapper .window-content {
-  overflow-y: scroll;
-  border-top: 2px solid #2c2c2c;
-  border-left: 2px solid #2c2c2c;
-  height: 100%;
-  background: #1e9899;
-}
-
-.windows-container .window-wrapper .window-content .banner {
+.windows-container .window-wrapper .banner {
   z-index: 100;
   padding: 1rem;
-  width: 100%;
   border-bottom: 2px solid #2c2c2c;
   background: linear-gradient(280deg, #e180f6 0%, #5bdbff 100%);
   -webkit-box-pack: justify;
@@ -174,17 +166,17 @@
           align-items: center;
 }
 
-.windows-container .window-wrapper .window-content .banner .more {
+.windows-container .window-wrapper .banner .more {
   margin-right: 2rem;
   font-size: 1.25rem;
 }
 
-.windows-container .window-wrapper .window-content .banner .windows-button {
+.windows-container .window-wrapper .banner .windows-button {
   padding: 1rem 2rem;
   width: auto;
 }
 
-.windows-container .window-wrapper .window-content .wrapping {
+.windows-container .window-wrapper .wrapping {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -193,9 +185,18 @@
           align-items: center;
 }
 
-.windows-container .window-wrapper .window-content .quick-link {
+.windows-container .window-wrapper .quick-link {
   margin-right: 2rem;
   text-decoration: underline;
+}
+
+.windows-container .window-wrapper .window-content {
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  border-top: 2px solid #2c2c2c;
+  border-left: 2px solid #2c2c2c;
+  height: 100%;
+  background: #e1f4ff;
 }
 
 .windows-container .window-wrapper .window-content .portfolio {
@@ -209,6 +210,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 1rem;
 }
 
 .windows-container .window-wrapper .window-content .portfolio .section-title {
@@ -230,8 +232,8 @@
   .windows-container .window-wrapper .window-content .portfolio .port-project {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 400px 1fr;
-        grid-template-columns: 400px 1fr;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     grid-gap: 2rem;
   }
   .windows-container .window-wrapper .window-content .portfolio .port-project .details {
@@ -249,7 +251,7 @@
 .windows-container .window-wrapper .window-content .portfolio .port-project a {
   text-decoration: underline;
   color: purple;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 
 .windows-container .window-wrapper .window-content .portfolio .port-project .tag-line {
@@ -257,22 +259,21 @@
 }
 
 .windows-container .window-wrapper .window-content .portfolio .port-project .tag-line .title {
-  font-size: 2rem;
+  font-size: 3rem;
+}
+
+.windows-container .window-wrapper .window-content .portfolio .port-project .tag-line .project-type {
+  font-size: 1.5rem;
+  opacity: .75;
 }
 
 .windows-container .window-wrapper .window-content .portfolio .port-project .desc {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   margin-bottom: .5rem;
 }
 
 .windows-container .window-wrapper .window-content .portfolio .port-project img {
   width: 100%;
-}
-
-@media only screen and (min-width: 800px) {
-  .windows-container .window-wrapper .window-content .portfolio .port-project img {
-    max-height: 400px;
-  }
 }
 
 .windows-container .window-wrapper .window-content .portfolio-page {

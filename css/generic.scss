@@ -5,6 +5,7 @@
     padding: 0;
     margin: 0;
     font-family: 'VT323', monospace;
+    transition: all ease .2s;
 }
 .start-menu{
     a{
@@ -30,6 +31,9 @@
     left: 10px;
     right: 10px;
     display: flex;
+    @media only screen and (max-width: 900px) {
+        justify-content: center;
+    }
     .menu-item{
         margin-left: 2px;
         margin-bottom: 2px;
@@ -151,16 +155,18 @@ strong{
     align-items: center;
     height: 100vh;
     width: 100%;
-    .desktop{
-        display: none;
-    }
     @media only screen and (min-width: 900px) {
         height: 100vh;
-        .mobile{
-            display: none;
-        }
-        .desktop{
-            display: block;
-        }
+    }
+}
+.desktop{
+    display: none !important;
+}
+@media only screen and (min-width: 900px) {
+    .mobile{
+        display: none !important;
+    }
+    .desktop{
+        display: block !important;
     }
 }

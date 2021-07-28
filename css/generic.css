@@ -5,6 +5,8 @@
   padding: 0;
   margin: 0;
   font-family: 'VT323', monospace;
+  -webkit-transition: all ease .2s;
+  transition: all ease .2s;
 }
 
 .start-menu {
@@ -35,6 +37,14 @@
   color: inherit;
   text-decoration: none;
   display: block;
+}
+
+@media only screen and (max-width: 900px) {
+  .start-menu {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .start-menu .menu-item {
@@ -191,19 +201,22 @@ strong {
   width: 100%;
 }
 
-.page-content .desktop {
-  display: none;
-}
-
 @media only screen and (min-width: 900px) {
   .page-content {
     height: 100vh;
   }
-  .page-content .mobile {
-    display: none;
+}
+
+.desktop {
+  display: none !important;
+}
+
+@media only screen and (min-width: 900px) {
+  .mobile {
+    display: none !important;
   }
-  .page-content .desktop {
-    display: block;
+  .desktop {
+    display: block !important;
   }
 }
 /*# sourceMappingURL=generic.css.map */

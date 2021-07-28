@@ -1,3 +1,6 @@
+// *{
+//     scroll-behavior: smooth;
+// }
 .windows-container{
     position: relative;
     .windows-button{
@@ -109,42 +112,44 @@
         border-top: 1px solid #dfdfdf;
         border-right: 1px solid #7f7f7f;
         border-bottom: 1px solid #7f7f7f;
+        position: relative;
+        .banner{
+            z-index: 100;
+            padding: 1rem;
+            border-bottom: 2px solid rgb(44, 44, 44);
+            background: linear-gradient(280deg, rgba(225,128,246,1) 0%, rgba(91,219,255,1) 100%);
+            justify-content: space-between;
+            display: flex;
+            align-items: center;
+            .more{
+                margin-right: 2rem;
+                font-size: 1.25rem;
+            }
+            .windows-button{
+                padding: 1rem 2rem;
+                width: auto;
+            }
+        }
+        .wrapping{
+            display: flex;
+            align-items: center;
+        }
+        .quick-link{
+            margin-right: 2rem;
+            text-decoration: underline;
+        }
         .window-content{
+            scroll-behavior: smooth;
             overflow-y: scroll;
             border-top: 2px solid rgb(44, 44, 44);
             border-left: 2px solid rgb(44, 44, 44);
             height: 100%;
-            background: rgba(30,152,153,1);
-            .banner{
-                z-index: 100;
-                padding: 1rem;
-                width: 100%;
-                border-bottom: 2px solid rgb(44, 44, 44);
-                background: linear-gradient(280deg, rgba(225,128,246,1) 0%, rgba(91,219,255,1) 100%);
-                justify-content: space-between;
-                display: flex;
-                align-items: center;
-                .more{
-                    margin-right: 2rem;
-                    font-size: 1.25rem;
-                }
-                .windows-button{
-                    padding: 1rem 2rem;
-                    width: auto;
-                }
-            }
-            .wrapping{
-                display: flex;
-                align-items: center;
-            }
-            .quick-link{
-                margin-right: 2rem;
-                text-decoration: underline;
-            }
+            background: rgb(225, 244, 255);
             .portfolio{
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                padding: 1rem;
                 .section-title{
                     margin-bottom: 1rem;
                 }
@@ -154,7 +159,7 @@
                     flex-direction: column;
                     @media only screen and (min-width: 1200px) {
                         display: grid;
-                        grid-template-columns: 400px 1fr;
+                        grid-template-columns: 1fr 1fr;
                         grid-gap: 2rem;
                         .details{
                             max-width: 60ch;
@@ -165,23 +170,24 @@
                     a{
                         text-decoration: underline;
                         color: purple;
-                        font-size: 1.25rem;
+                        font-size: 1.5rem;
                     }
                     .tag-line{
                         margin-bottom: 1rem;
                         .title{
-                            font-size: 2rem;
+                            font-size: 3rem;
+                        }
+                        .project-type{
+                            font-size: 1.5rem;
+                            opacity: .75;
                         }
                     }
                     .desc{
-                        font-size: 1.25rem;
+                        font-size: 1.5rem;
                         margin-bottom: .5rem;
                     }
                     img{
                         width: 100%;
-                        @media only screen and (min-width: 800px) {
-                            max-height: 400px;
-                        }
                     };
                 }
             }

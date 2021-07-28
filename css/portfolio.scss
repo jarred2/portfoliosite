@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: 1fr;
     place-items: center;
+    position: relative;
     @media only screen and (min-width: 1200px) {
         justify-items: flex-start;
         padding-left: 2rem;
