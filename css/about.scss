@@ -12,6 +12,7 @@
         height: 65%;
         .window-content{
             .about-wrapper{
+                overflow-y: scroll;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -20,6 +21,7 @@
                     text-align: left;   
                 }
                 @media only screen and (min-width: 1200px) {
+                    padding: 0 2rem;
                     flex-direction: row;
                     align-items: flex-start;
                 }
@@ -30,20 +32,23 @@
             }
             .profile-picture{
                 margin: 1rem;
-                aspect-ratio: 1/1;
-                width: 250px !important;
-                border-bottom: 2px solid black;
-                border-right: 2px solid black;
+                object-fit: cover;
+                border-radius: 100%;
+                width: 220px !important;
+                height: 220px !important;
+                -webkit-box-shadow: 5px 5px 0px 0px rgba(0,0,0,0.9);
+                -moz-box-shadow: 5px 5px 0px 0px rgba(0,0,0,0.9);
+                box-shadow: 5px 5px 0px 0px rgba(0,0,0,0.9);           
             }
             .about{
                 padding: 1rem;                     
                 max-width: 80ch;
                 .title{
-                    font-size: 3rem;
+                    font-size: 2.25rem;
                     margin-bottom: .5rem;
                 }
                 .desc{
-                    font-size: 1.5rem;
+                    font-size: 1.25rem;
                 }
             }
         }
